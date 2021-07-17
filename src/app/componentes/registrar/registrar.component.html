@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-5">
+      <!-- <form (ngSubmit)="registrar()"> -->
+        <form>
+        <div class="mb-3">
+          <label for="inputNombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="inputNombre"
+          name="nombres" #nombres="ngModel" [(ngModel)]="usuarioModel.nombres">
+        </div>
+        <div class="mb-3">
+          <label for="inputApellidos" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="inputApellidos"
+          name="apellidos" #apellidos="ngModel" [(ngModel)]="usuarioModel.apellidos">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1"
+          name="password" #password="ngModel" [(ngModel)]="usuarioModel.password">
+        </div>
+        <div class="mb-3">
+          <label for="inputUsuario" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="inputUsuario"
+          name="usuario" #usuario="ngModel" [(ngModel)]="usuarioModel.usuario">
+        </div>
+        <div class="mb-3">
+          <label for="inputEdad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="inputEdad"
+          name="edad" #edad="ngModel" [(ngModel)]="usuarioModel.edad">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="text" class="form-control" id="exampleInputEmail1"
+          name="email" #email="ngModel" [(ngModel)]="usuarioModel.email">
+        </div>
+        <div class="mb-3">
+          <label for="inputTelefono" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="inputTelefono"
+          name="telefono" #telefono="ngModel" [(ngModel)]="usuarioModel.telefono">
+        </div>
+        
+        <button type="submit" class="btn btn-primary" (click)="registrar()">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>

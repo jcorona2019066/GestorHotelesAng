@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombres</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">usuario</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Email</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Hotel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usua of usuariosList">
+        <th scope="row">{{ usua._id }}</th>
+        <td>{{ usua.nombres }}</td>
+        <td>{{ usua.apellidos }}</td>
+        <td>{{ usua.usuario }}</td>
+        <td>{{ usua.edad }}</td>
+        <td>{{ usua.email }}</td>
+        <td>{{ usua.telefono }}</td>
+        <td>{{ usua.hotel }}</td>
+
+      </tr>
+    </tbody>
+  </table>

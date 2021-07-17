@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<p>eventos works!</p>
+
+  <p>hotel works! ADDmin hotel</p>
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Hotel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let even of eventosList">
+        <th scope="row">{{ even._id }}</th>
+        <td>{{ even.nombre }}</td>
+        <td>{{ even.fecha }}</td>
+        <td>{{ even.hotel }}</td>
+
+
+
+      </tr>
+      
+    </tbody>
+  </table>
